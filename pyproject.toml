@@ -1,0 +1,37 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "Solver"
+version = "0.1.0"
+description = "Сервис решения задач"
+authors = ["Ruslan Murzin <www.ruslanmurzin1993@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+fastapi = "^0.75"
+dependency_injector = "^4.37"
+uvicorn = { version = "^0.14.0", extras = ["standard"] }
+aiofiles = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+httpretty = "^1.0.5"
+websocket-client = "^1.1.1"
+pytest = "^6.2"
+pytest-cov = "^2.10"
+flake8-colors = "*"
+pytest-lazy-fixture = "^0.6"
+pytest-pythonpath = "^0.7.3"
+pytest-timeout = "^1.4"
+pytest-xdist = "^2.1"
+pytest-asyncio = "^0.15"
+pytest-mock = "^3.7"
+flake8 = "*"
+mypy = "^0.920"
+
+[tool.mypy]
+ignore_missing_imports = true
+show_error_context = true
